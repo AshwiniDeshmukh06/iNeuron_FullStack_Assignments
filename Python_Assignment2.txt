@@ -1,0 +1,121 @@
+1.What are the two values of the Boolean data type? How do you write them?
+There are 2 types of boolean values and those are written as below.
+1. True
+2. False
+
+2. What are the three different types of Boolean operators?
+a. AND - True if both are true
+b. OR - True if at least one is true
+c. NOT - True only if false
+
+3. Make a list of each Boolean operator&#39;s truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+
+AND Truth table:
+Value1		Value2		Output
+True		True		True
+True		False		False
+False		True		False
+False		False		False
+
+OR Truth table:
+Value1		Value2		Output
+True		True		True
+True		False		True
+False		True		True
+False		False		False
+
+NOT Truth table
+Value		Output
+True		False
+False		True
+
+4. What are the values of the following expressions?
+(5 &gt; 4) and (3 == 5) - False
+
+not (5 &gt; 4) - False
+
+(5 &gt; 4) or (3 == 5) - True
+
+not ((5 &gt; 4) or (3 == 5)) - False
+
+(True and True) and (True == False) - False
+
+(not False) or (not True) - True
+
+5. What are the six comparison operators?
+> - greater than
+>= - greater than or equal to
+< - less than
+<= - less than or equal to
+== - eual to
+!= - not equal to
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a
+condition and when you would use one.
+
+assignment operator has '=' sign and equal to has '==' sign.
+When we need to assign value to any variable, we use assignment operator.
+If we need to compare 2 variables, we use equal to operator.
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print(&#39;eggs&#39;)
+if spam &gt; 5:
+print(&#39;bacon&#39;)
+else:
+print(&#39;ham&#39;)
+print(&#39;spam&#39;)
+print(&#39;spam&#39;)
+
+Answer:
+Block 1 - 
+spam = 0
+
+Block 2 -
+if spam == 10:
+print('eggs')
+
+Block 3-
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+
+if spam == 1:
+  print('Hello')
+
+elif spam == 2:
+  print('Howdy')
+
+else:
+  print('Greetings')
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+CTRL + C
+
+10. How can you tell the difference between break and continue?
+A break statement, when used inside the loop, will terminate the loop and exit. If used inside nested loops, it will break out from the current loop.
+A continue statement will stop the current execution when used inside a loop, and the control will go back to the start of the loop.
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+There is no difference.
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while
+
+For loop:
+for i in range(10):
+  print(i)
+
+While loop:
+i = 1
+while(i<=10):
+    print(i)
+    i += 1
